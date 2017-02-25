@@ -12,5 +12,13 @@
   "license": "MIT",
   "bin": {
     "gitall": "./gitall.cli.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralphv/gitall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ralphv/gitall/issues"
+  },
+  "homepage": "https://github.com/ralphv/gitall#readme"
 }
