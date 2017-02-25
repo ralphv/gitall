@@ -50,7 +50,8 @@ function processDirectory(dir) {
 
 function processRepo(dir) {
   //http://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color
-  console.log("\x1b[4m\x1b[1m\x1b[33m%s\x1b[0m", "git repo:", "[", path.relative(cwd, dir), "]");
+  const relativePath = path.relative(cwd, dir) || ".";
+  console.log("\x1b[4m\x1b[1m\x1b[33m%s\x1b[0m", "git repo:", "[", relativePath, "]");
   execGit(dir);
   console.log();
 }
@@ -58,6 +59,7 @@ function processRepo(dir) {
 
 // main:
 const cwd = process.cwd();
+processDirectory(cwd);
 traverseFolders(cwd);
 if(errors) {
   console.error("\x1b[1m\x1b[31m%s\x1b[0m", "gitall total errors:", errors, "\r\n");
