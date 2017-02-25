@@ -10,6 +10,7 @@ Install the script using 'npm install'
 Use gitall with the same command arguments you use for git. 
 
 gitall will search for all git repos in the current directory and lower level directories and run the same command on them.
+If it encounters and error, it will pause for you to acknowledge it.
 
 ### License
 
