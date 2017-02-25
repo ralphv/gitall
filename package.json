@@ -1,5 +1,5 @@
 {
-  "name": "gitall",
+  "name": "git-recursive",
   "version": "1.0.0",
   "description": "A simple script to run a git command recursively on all git repos",
   "main": "gitall.cli.js",
@@ -11,7 +11,8 @@
   "author": "Ralph Varjabedian",
   "license": "MIT",
   "bin": {
-    "gitall": "./gitall.cli.js"
+    "gitall": "./gitall.cli.js",
+    "git-recursive": "./gitall.cli.js"
   },
   "repository": {
     "type": "git",
