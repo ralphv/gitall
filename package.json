@@ -1,6 +1,6 @@
 {
   "name": "git-recursive",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple script to run a git command recursively on all git repos",
   "main": "gitall.cli.js",
   "keywords": [
